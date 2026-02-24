@@ -6,9 +6,9 @@ import {PasswordStore} from "../src/PasswordStore.sol";
 import {DeployPasswordStore} from "../script/DeployPasswordStore.s.sol";
 
 contract PasswordStoreTest is Test {
-    PasswordStore public passwordStore;
-    DeployPasswordStore public deployer;
-    address public owner;
+    PasswordStore public passwordStore;//! src instance
+    DeployPasswordStore public deployer;//! script instance
+    address public owner;//!the owner of the contract during tests.
 
     function setUp() public {
         deployer = new DeployPasswordStore();
