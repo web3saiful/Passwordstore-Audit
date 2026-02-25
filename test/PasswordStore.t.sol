@@ -24,7 +24,7 @@ contract PasswordStoreTest is Test {
         assertEq(actualPassword, expectedPassword);
     }
 
-    function test_non_owner_reading_password_reverts() public {
+     function test_non_owner_reading_password_reverts() public {
         vm.startPrank(address(1));
 
         vm.expectRevert(PasswordStore.PasswordStore__NotOwner.selector);
