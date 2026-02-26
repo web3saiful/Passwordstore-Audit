@@ -39,3 +39,4 @@ contract PasswordStore {
         return s_password;
     }
 }
+
